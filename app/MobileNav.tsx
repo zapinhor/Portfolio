@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 const links = [
   ["Jogos", "#smaug"],
   ["Web", "#web"],
+  ["Habilidades", "#habilidades"],
   ["Pokégotchi", "#pokegotchi"],
   ["Sobre mim", "#sobre"],
   ["Contato", "#contato"],

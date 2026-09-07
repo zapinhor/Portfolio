@@ -1,6 +1,9 @@
 import GameCarousel from "./GameCarousel";
 import MobileNav from "./MobileNav";
 import ScrollReveal from "./ScrollReveal";
+import LanguageToggle from "./LanguageToggle";
+import SkillsSection from "./SkillsSection";
+import FisioPrototype from "./FisioPrototype";
 
 const asset = (path: string) => `/Portfolio${path.startsWith("/games/") ? path.replace(/\.png$/, ".webp") : path}`;
 
@@ -68,7 +71,6 @@ const smaugProjects = [
   },
 ];
 
-const skills = ["C#", "Unity", "Unreal Engine", "Construct 3", "Ren'Py", "Python", "HTML", "CSS", "JavaScript", "WordPress"];
 const gameRole = "Programação, implementação de sistemas e mecânicas, montagem do projeto na engine e aplicação de level design, interfaces, identidade visual e efeitos sonoros.";
 
 function Arrow() {
@@ -84,11 +86,12 @@ export default function Home() {
         <nav aria-label="Navegação principal">
           <a href="#smaug">Jogos</a>
           <a href="#web">Web</a>
+          <a href="#habilidades">Habilidades</a>
           <a href="#pokegotchi">Pokégotchi</a>
           <a href="#sobre">Sobre mim</a>
           <a href="#contato">Contato</a>
         </nav>
-        <a className="availability" href="https://wa.me/5511997396671" target="_blank" rel="noreferrer"><span /> Disponível para projetos</a>
+        <div className="header-actions"><LanguageToggle /><a className="availability" href="https://wa.me/5511997396671" target="_blank" rel="noreferrer"><span /> Disponível para projetos</a></div>
         <MobileNav />
       </header>
 
@@ -104,6 +107,7 @@ export default function Home() {
       <section className="intro" id="sobre" data-reveal>
         <p className="label">01 / Sobre mim</p>
         <div className="intro-content">
+          <figure className="about-portrait" data-reveal="left"><img src={asset("/danilo-petraglia.webp")} alt="Retrato profissional de Danilo Petraglia" /></figure>
           <h2 data-reveal="left">Curiosidade que virou<br />ofício.</h2>
           <div className="intro-copy" data-reveal="right">
             <p>Sempre tive interesse por tecnologia e curiosidade para entender como as coisas funcionam. Grande parte do que aprendi começou de forma autodidata, por meio de vídeos, pesquisas e, principalmente, da prática. Ao longo dos anos, explorei diferentes áreas de hardware e software, testando ferramentas, resolvendo problemas e transformando a curiosidade em conhecimento técnico.</p>
@@ -117,12 +121,13 @@ export default function Home() {
           <div><strong>Teleperformance</strong><small>nov/2024 — ago/2025</small></div>
           <p>Atuação bilíngue em uma operação de grande volume, com média de aproximadamente 700 tickets por dia e desempenho superior a 90% nos indicadores acompanhados. A experiência fortaleceu minha disciplina, atenção a detalhes e comunicação em português e inglês.</p>
         </aside>
-        <div className="skills" aria-label="Tecnologias" data-reveal>{skills.map((skill) => <span key={skill}>{skill}</span>)}</div>
       </section>
+
+      <SkillsSection />
 
       <section className="smaug" id="smaug">
         <div className="section-title" data-reveal>
-          <p className="label">02 / Projetos acadêmicos</p>
+          <p className="label">03 / Projetos acadêmicos</p>
           <h2>SMAUG</h2>
           <p className="smaug-description">Sistema acadêmico da FATEC que propõe, a cada semestre, o desenvolvimento colaborativo de um protótipo jogável.</p>
         </div>
@@ -155,7 +160,7 @@ export default function Home() {
 
       <section className="featured-project" id="pokegotchi" data-reveal>
         <div className="featured-heading">
-          <p className="label">03 / Projeto em destaque</p>
+          <p className="label">04 / Projeto em destaque</p>
           <div>
             <span className="featured-kicker">Aplicação web · JavaScript</span>
             <h2>Pokégotchi</h2>
@@ -179,7 +184,7 @@ export default function Home() {
       </section>
 
       <section className="web-section" id="web" data-reveal>
-        <p className="label">04 / Desenvolvimento web</p>
+        <p className="label">05 / Desenvolvimento web</p>
         <div className="web-content" data-reveal>
           <h2>Da ideia ao site<br />pronto para crescer.</h2>
           <div><p>Desenvolvimento full stack de sites e aplicações para a web, da construção das interfaces à integração de recursos e publicação. Cada projeto é pensado para funcionar bem em computadores e celulares, comunicar com clareza e facilitar a evolução do negócio.</p><div className="web-stack"><span>Sites institucionais</span><span>Landing pages</span><span>E-commerce</span><span>Aplicações web</span><span>Integração de APIs</span><span>Front-end e back-end</span></div></div>
@@ -189,6 +194,7 @@ export default function Home() {
           <span><small>02</small><strong>E-commerce</strong><p>Estruturação de lojas virtuais, páginas de produtos e jornadas de compra voltadas à conversão.</p></span>
           <span><small>03</small><strong>Aplicações e integrações</strong><p>Recursos interativos, consumo de APIs e conexão entre interface, dados e regras do projeto.</p></span>
         </div>
+        <FisioPrototype />
         <a className="web-project featured-web" href="https://drive.google.com/file/d/1pybqrFdF97QAyaLOGlf2yHx1GyXW3GKI/view?usp=sharing" target="_blank" rel="noreferrer" aria-label="Baixar o Pokémon Tamagotchi para Windows" data-reveal>
           <div><span>Aplicação de console · C# · cerca de 5 meses</span><h3>Pokémon Tamagotchi</h3></div>
           <div className="web-project-copy"><p>Versão original desenvolvida em C# e .NET. Permite adotar um mascote, acompanhar seus atributos e interagir com ações como alimentar, brincar e dormir. O projeto serviu como base conceitual e técnica para o Pokégotchi na web.</p><p className="role-summary"><small>Minha atuação</small> Projeto individual: programação, lógica, estrutura da aplicação e desenvolvimento completo em C#.</p></div>
@@ -202,7 +208,7 @@ export default function Home() {
       </section>
 
       <section className="contact" id="contato" data-reveal>
-        <p className="label">05 / Contato</p>
+        <p className="label">06 / Contato</p>
         <h2>Vamos construir<br />algo juntos.</h2>
         <div className="contact-actions">
           <a className="email" href="mailto:contatodanilohp@gmail.com">contatodanilohp@gmail.com <Arrow /></a>
