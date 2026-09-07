@@ -108,12 +108,14 @@ export default function Home() {
         <p className="label">01 / Sobre mim</p>
         <div className="intro-content">
           <figure className="about-portrait" data-reveal="left"><img src={asset("/danilo-petraglia.webp")} alt="Retrato profissional de Danilo Petraglia" /></figure>
-          <h2 data-reveal="left">Curiosidade que virou<br />ofício.</h2>
+          <div className="about-main" data-reveal="right">
+          <h2>Curiosidade que virou<br />ofício.</h2>
           <div className="intro-copy" data-reveal="right">
             <p>Sempre tive interesse por tecnologia e curiosidade para entender como as coisas funcionam. Grande parte do que aprendi começou de forma autodidata, por meio de vídeos, pesquisas e, principalmente, da prática. Ao longo dos anos, explorei diferentes áreas de hardware e software, testando ferramentas, resolvendo problemas e transformando a curiosidade em conhecimento técnico.</p>
             <p>Minha relação com os jogos também começou cedo. Além de jogar, sempre tive interesse em observar como cada experiência era construída: suas mecânicas, ambientação, narrativa, sons e formas de interação. Essa paixão me levou ao desenvolvimento de jogos, área em que atuo há aproximadamente três anos, trabalhando principalmente com programação, sistemas e mecânicas de gameplay.</p>
             <p>Paralelamente, atuo há cerca de quatro anos com desenvolvimento web. Trabalho na criação de sites institucionais, landing pages, e-commerce e aplicações responsivas, utilizando HTML, CSS e JavaScript, além de WordPress, integrações com APIs e recursos de back-end conforme as necessidades de cada projeto.</p>
             <p>Hoje, busco evoluir como desenvolvedor de jogos e desenvolvedor web full stack, contribuindo tanto na construção técnica quanto na definição de soluções claras e funcionais. Meu objetivo é transformar ideias em produtos digitais bem estruturados, com identidade e uma experiência consistente para quem utiliza.</p>
+          </div>
           </div>
         </div>
         <aside className="experience-note" data-reveal>
