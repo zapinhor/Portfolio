@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "Danilo Petraglia — Game Developer & Web" }],
   },
   twitter: { card: "summary_large_image", title: "Danilo Petraglia | Games & Full Stack Web", description: "Desenvolvimento de jogos, sites, aplicações web e e-commerce.", images: ["/og.png"] },
-  icons: { icon: "/Portfolio/favicon.svg", shortcut: "/Portfolio/favicon.svg" },
+  icons: { icon: "/Portfolio/brand/favicon.svg", shortcut: "/Portfolio/brand/favicon.svg" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

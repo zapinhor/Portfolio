@@ -218,3 +218,159 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 
 /* About reading flow: portrait left, title and biography grouped right */
 @media(min-width:651px){.about-main{min-width:0}.about-main .intro-copy{margin-top:32px}}
+
+/* 2026 brand identity — Danilo Petraglia */
+:root{--bg:#111518;--panel:#14191c;--text:#fff;--muted:#a4a6a8;--line:#30363a;--accent:#e5bcc3;--accent-soft:#f5e4e7;--carbon:#1b2126}
+body{background:var(--carbon);color:var(--text)}
+::selection{background:var(--accent);color:var(--carbon)}
+*{scrollbar-color:#767a7d #111518}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline-color:var(--accent)}
+.header{height:82px;background:rgba(27,33,38,.94);border-color:rgba(229,188,195,.2);padding-inline:3.5vw}
+.brand-name{display:flex;width:164px;height:42px;align-items:center}
+.brand-name img{display:block;width:100%;height:100%;object-fit:contain;object-position:left center}
+.header nav{gap:22px;color:#d1d3d4}
+.header nav a:hover{color:var(--accent)}
+.header nav a::after,.name::after{background:var(--accent)}
+.availability{color:#d1d3d4}
+.availability span{background:var(--accent);box-shadow:0 0 0 3px rgba(229,188,195,.14);animation:none}
+.language-switch{border-color:#494d51}
+.language-switch button[aria-pressed="true"]{background:var(--accent);color:var(--carbon)}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:760px;height:100vh;padding-top:158px;background-image:linear-gradient(90deg,rgba(27,33,38,.98) 0%,rgba(27,33,38,.93) 50%,rgba(27,33,38,.68) 100%),url('/Portfolio/brand/grid-perspective.png');background-size:cover;background-position:center bottom}
+.hero::after{content:"";position:absolute;z-index:-1;right:-4vw;bottom:-22%;width:min(62vw,890px);aspect-ratio:1;background:url('/Portfolio/brand/danilo-petraglia-brand.png') center top/cover no-repeat;filter:contrast(1.05);opacity:.4;mix-blend-mode:luminosity;mask-image:linear-gradient(to bottom,#000 58%,transparent 94%)}
+.hero-brand-mark{position:absolute;z-index:-1;right:5vw;top:18%;width:clamp(100px,14vw,220px);opacity:.7}
+.hero-brand-mark img{width:100%;filter:invert(88%) sepia(8%) saturate(766%) hue-rotate(300deg) brightness(98%)}
+.hero-meta{color:var(--accent)}
+.hero h1{font-size:clamp(58px,7vw,96px);max-width:1120px;letter-spacing:-.035em}
+.hero h1 span{color:var(--accent)}
+.hero-bottom p{color:#d1d3d4}
+.circle-link{border-color:var(--accent);color:var(--accent)}
+.circle-link:hover{background:var(--accent);color:var(--carbon)}
+.intro,.skills-section,.smaug,.featured-project,.web-section,.contact{position:relative}
+.intro{background:#f5e4e7;color:var(--carbon);border-bottom:0}
+.intro .label,.intro-copy p,.experience-note p,.experience-note>span,.experience-note small{color:#494d51}
+.intro h2{color:#1b2126}
+.about-portrait{min-height:610px;background:#e5bcc3;border:0}
+.about-portrait::before{display:none}
+.about-portrait img{width:100%;height:100%;max-width:none;object-fit:cover;object-position:center 22%;filter:none}
+.experience-note{border-color:rgba(27,33,38,.3)}
+.skills-section{background:#fff;color:var(--carbon);border-bottom:0}
+.skills-heading>div>p,.skill-group h3{color:#767a7d}
+.skill-groups,.skill-group{border-color:#d1d3d4}
+.skill-item{border-color:#d1d3d4;color:#494d51;background:#faf2f3}
+.skill-item b{background:var(--carbon);color:var(--accent)}
+.skill-item:hover{border-color:var(--accent);color:var(--carbon)}
+.smaug{background:var(--carbon);background-image:url('/Portfolio/brand/grid-vertical.png');background-size:cover;background-attachment:fixed}
+.section-title h2{color:var(--accent)}
+.smaug-description,.compact-project-copy>p:last-child,.project-role p{color:#d1d3d4}
+.project-list,.project-entry,.compact-project-heading,.project-role{border-color:#494d51}
+.compact .carousel-frame{border-radius:0;border-color:#494d51}
+.carousel-dots button.active span,.carousel-dots span.active{background:var(--accent)}
+.compact-project-heading>a,.web-project strong,.secondary-link{color:var(--accent)}
+.featured-project{background:#f5e4e7;color:var(--carbon);border:0}
+.featured-kicker,.featured-visual figcaption,.featured-copy>small{color:#767a7d}
+.featured-copy>p{color:#494d51}
+.featured-visual img{background:#fff;border-color:#e5bcc3}
+.featured-tags span{border-color:#e5bcc3;color:#494d51;background:#fff}
+.featured-role{border-color:#e5bcc3}
+.featured-role p{color:#494d51}
+.featured-facts strong{color:#1b2126}
+.download-button{background:var(--carbon);border-color:var(--carbon);color:#fff}
+.download-button span{color:var(--accent)}
+.download-button:hover{background:#07080a;border-color:#07080a;box-shadow:0 14px 34px rgba(27,33,38,.2)}
+.web-section{background:#fff;color:var(--carbon)}
+.web-content>div>p,.web-services p,.web-project p{color:#767a7d}
+.web-stack span{border-color:#d1d3d4;color:#494d51}
+.web-services,.web-services>span+span{border-color:#d1d3d4}
+.web-services small{color:#b06f7a}
+.web-project{border-color:#d1d3d4}
+.web-project strong{color:#9e5e69}
+.nabulab-project{scroll-margin-top:100px;margin:100px 0 48px;display:grid;grid-template-columns:.9fr 1.1fr;min-height:650px;background:#071a3d;color:#fff;overflow:hidden}
+.nabulab-identity{position:relative;padding:72px 6vw 64px 52px;display:flex;flex-direction:column;align-items:flex-start;background:#f5f7fb;color:#0b2d6b}
+.nabulab-identity::after{content:"";position:absolute;right:-95px;bottom:-95px;width:260px;height:260px;background:url('/Portfolio/brand/graphic-3.svg') center/contain no-repeat;opacity:.08}
+.nabulab-logo{width:min(320px,85%);height:auto;margin-bottom:auto}
+.nabulab-identity>p:first-of-type{margin:70px 0 16px;color:#2260b9;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.15em}
+.nabulab-identity h3{margin:0;max-width:540px;font-size:clamp(38px,4.8vw,70px);line-height:.98;letter-spacing:-.035em;font-weight:700}
+.nabulab-summary{max-width:560px;margin:28px 0 0;color:#4f6079;font-size:15px;line-height:1.8}
+.nabulab-link{margin-top:34px;padding:16px 19px;background:#0b2d6b;color:#fff;display:flex;align-items:center;gap:34px;font-size:12px;font-weight:700;transition:transform .25s,background .25s}
+.nabulab-link:hover{background:#061d48;transform:translateY(-2px)}
+.nabulab-product{padding:62px 52px;background:#071a3d}
+.nabulab-product-head{display:flex;align-items:center;justify-content:space-between;color:#9fc2ff;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.15em}
+.nabulab-product-head img{width:56px;height:56px;border-radius:14px}
+.nabulab-metrics{display:grid;grid-template-columns:repeat(3,1fr);margin-top:60px;border-top:1px solid #25416d;border-bottom:1px solid #25416d}
+.nabulab-metrics strong{padding:24px 16px 24px 0;font-size:clamp(25px,3vw,44px);font-weight:800}
+.nabulab-metrics strong+strong{padding-left:20px;border-left:1px solid #25416d}
+.nabulab-metrics small{display:block;margin-top:7px;color:#9fc2ff;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.11em}
+.nabulab-features{display:grid;grid-template-columns:1fr 1fr;margin-top:36px}
+.nabulab-features span{padding:15px 0;border-bottom:1px solid #25416d;color:#dce9ff;font-size:13px}
+.nabulab-features span:nth-child(2n){padding-left:24px}
+.nabulab-role{margin-top:36px}
+.nabulab-role small{color:#9fc2ff;font-size:9px;text-transform:uppercase;letter-spacing:.12em}
+.nabulab-role p{max-width:640px;color:#c6d7f2;font-size:13px;line-height:1.7}
+.nabulab-product .prototype-stack{grid-column:auto;margin-top:28px}
+.nabulab-product .prototype-stack span{border-color:#37578a;color:#c6d7f2}
+.contact{overflow:hidden;background:var(--carbon);background-image:url('/Portfolio/brand/grid-square.png');background-size:cover}
+.contact::after{content:"";position:absolute;right:-14%;top:8%;width:min(46vw,640px);aspect-ratio:1;background:url('/Portfolio/brand/graphic-1.svg') center/contain no-repeat;filter:invert(88%) sepia(8%) saturate(766%) hue-rotate(300deg) brightness(98%);opacity:.1;pointer-events:none}
+.contact h2{color:var(--accent);letter-spacing:-.035em}
+.email{color:#fff;border-color:var(--accent)}
+.whatsapp{border-color:var(--accent);background:rgba(229,188,195,.08)}
+.whatsapp span{color:var(--accent)}
+.whatsapp:hover{border-color:#fff;background:rgba(229,188,195,.14)}
+footer{height:110px;background:#07080a;border-color:#30363a}
+.footer-signature{width:150px;height:58px;object-fit:contain;object-position:left center}
+
+@media(max-width:1180px){.header nav{gap:14px;font-size:11px}.brand-name{width:140px}.nabulab-project{grid-template-columns:1fr}.nabulab-identity{min-height:590px}.nabulab-logo{margin-bottom:0}}
+@media(max-width:900px){.header{height:76px}.hero::after{right:-18vw;width:92vw;opacity:.28}.hero-brand-mark{right:2vw}.nabulab-identity,.nabulab-product{padding:52px 38px}.about-portrait{min-height:500px}}
+@media(max-width:650px){body{overflow-x:hidden}.header{height:68px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand-name{width:118px}.header-actions{display:none}.mobile-nav{position:static;margin-left:auto;flex:0 0 auto}.mobile-nav-trigger{min-width:72px}.hero{padding-top:120px;background-position:58% bottom}.hero::after{right:-52vw;width:145vw;opacity:.2}.hero-brand-mark{top:16%;right:-8vw;width:150px}.hero h1{font-size:36px;line-height:1.04}.hero-meta{gap:10px 14px}.hero-meta span:last-child{display:none}.about-portrait{min-height:460px}.nabulab-project{margin:72px -20px 32px}.nabulab-identity,.nabulab-product{padding:40px 20px}.nabulab-identity{min-height:auto}.nabulab-identity>p:first-of-type{margin-top:58px}.nabulab-identity h3{font-size:42px}.nabulab-metrics{grid-template-columns:1fr}.nabulab-metrics strong+strong{border-left:0;border-top:1px solid #25416d;padding-left:0}.nabulab-features{grid-template-columns:1fr}.nabulab-features span:nth-child(2n){padding-left:0}.contact::after{width:90vw;right:-44%;top:18%}footer{height:auto}.footer-signature{width:132px}}
+
+/* Dark-first identity refinement: the DP monogram always appears as one unit. */
+.hero::after{display:none}
+.hero-brand-mark{z-index:-1;right:6vw;top:50%;width:clamp(260px,34vw,520px);opacity:.2;transform:translateY(-44%)}
+.hero-brand-mark img{display:block;width:100%;filter:none}
+.intro{background:#161c21;color:var(--text);border-bottom:1px solid var(--brand-line)}
+.intro .label,.intro-copy p,.experience-note p{color:var(--brand-muted)}
+.intro h2,.experience-note strong{color:var(--text)}
+.about-symbol{min-height:610px;align-items:center;background:#11171b;border:1px solid var(--brand-line)}
+.about-symbol::after{content:"";position:absolute;inset:9%;background:url('/Portfolio/brand/grid-square.png') center/cover no-repeat;opacity:.13}
+.about-symbol img{z-index:1;width:min(72%,430px);height:auto;object-fit:contain;filter:none}
+.about-portrait[data-reveal]{opacity:1;transform:none}
+.skills-section{background:#0f1418;color:var(--text);border-bottom:1px solid var(--brand-line)}
+.skills-heading>div>p,.skill-group h3{color:var(--brand-muted)}
+.skill-item{border-color:#343b40;color:#d9d9d5;background:#171d21}
+.skill-item:hover{border-color:var(--accent);color:#fff}
+.featured-project{background:#151b20;color:var(--text);border-top:1px solid var(--brand-line);border-bottom:1px solid var(--brand-line)}
+.featured-project .label,.featured-kicker,.featured-copy>p,.featured-visual figcaption{color:var(--brand-muted)}
+.featured-visual img{background:#0d1114;border-color:#30373c}
+.featured-tags span{border-color:#3a4146;color:#d5d5d1;background:#11171b}
+.featured-facts,.featured-role{border-color:#353c41}
+.featured-facts small,.featured-role small{color:var(--accent)}
+.featured-role p{color:var(--brand-muted)}
+.download-button{background:var(--accent);border-color:var(--accent);color:var(--carbon)}
+.download-button span{color:var(--carbon)}
+.download-button:hover{background:#f0cbd1;border-color:#f0cbd1;box-shadow:0 14px 34px rgba(0,0,0,.3)}
+.web-section{background:#0c1115;color:var(--text)}
+.web-content>div>p,.web-services p,.web-project p{color:var(--brand-muted)}
+.web-services{border-color:#343b40}
+.web-services>span{border-color:#343b40}
+.web-services small,.role-summary small{color:var(--accent)}
+.web-stack span{border-color:#3a4146;color:#d5d5d1}
+.web-project{border-color:#343b40}
+.web-project:hover{background:#151b20}
+.nabulab-project{background:#12181c;color:var(--text);border:1px solid var(--brand-line)}
+.nabulab-identity{background:#171d21;color:var(--text);border-right:1px solid var(--brand-line)}
+.nabulab-identity::after{opacity:.1;filter:invert(88%) sepia(8%) saturate(766%) hue-rotate(300deg) brightness(98%)}
+.nabulab-logo{filter:grayscale(1) brightness(2.5);opacity:.9}
+.nabulab-identity>p:first-of-type{color:var(--accent)}
+.nabulab-summary{color:var(--brand-muted)}
+.nabulab-link{background:var(--accent);color:var(--carbon)}
+.nabulab-link:hover{background:#f0cbd1}
+.nabulab-product{background:#0f1418}
+.nabulab-product-head,.nabulab-metrics small,.nabulab-role small{color:var(--accent)}
+.nabulab-product-head img{filter:grayscale(1);border:1px solid var(--brand-line)}
+.nabulab-metrics{border-color:var(--brand-line)}
+.nabulab-metrics strong+strong{border-color:var(--brand-line)}
+.nabulab-features span{border-color:var(--brand-line);color:#ecece8}
+.nabulab-role p{color:var(--brand-muted)}
+.nabulab-product .prototype-stack span{border-color:#3a4146;color:#d5d5d1}
+
+@media(max-width:900px){.hero-brand-mark{right:-4vw;width:clamp(250px,52vw,430px);opacity:.16}.nabulab-identity{border-right:0;border-bottom:1px solid var(--brand-line)}}
+@media(max-width:650px){.hero-brand-mark{top:36%;right:-15vw;width:270px;opacity:.14}.about-symbol{min-height:430px}.about-symbol img{width:68%}.nabulab-metrics strong+strong{border-color:var(--brand-line)}}

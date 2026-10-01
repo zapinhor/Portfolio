@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 454.54 500" role="img" aria-labelledby="title">
+  <title>Monograma DP</title>
+  <g fill="#e5bcc3">
+    <rect x="181.81" width="90.92" height="90.92"/>
+    <rect x="90.92" y="409.1" width="181.81" height="90.9"/>
+    <polygon points="454.54 90.92 454.54 272.73 363.64 272.73 363.64 409.1 272.73 409.1 272.73 90.92 454.54 90.92"/>
+    <rect x="90.92" y="90.92" width="90.9" height="90.92"/>
+    <rect y="181.83" width="90.92" height="227.27"/>
+  </g>
+</svg>

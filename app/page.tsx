@@ -82,13 +82,14 @@ export default function Home() {
     <main>
       <ScrollReveal />
       <header className="header">
-        <a className="name" href="#inicio">Danilo Petraglia</a>
+        <a className="name brand-name" href="#inicio" aria-label="Danilo Petraglia — início"><img src={asset("/brand/logo-horizontal-dark.svg")} alt="Danilo Petraglia" /></a>
         <nav aria-label="Navegação principal">
-          <a href="#smaug">Jogos</a>
-          <a href="#web">Web</a>
-          <a href="#habilidades">Habilidades</a>
-          <a href="#pokegotchi">Pokégotchi</a>
           <a href="#sobre">Sobre mim</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#smaug">Jogos</a>
+          <a href="#pokegotchi">Pokégotchi</a>
+          <a href="#web">Web</a>
+          <a href="#nabulab">NabuLab</a>
           <a href="#contato">Contato</a>
         </nav>
         <div className="header-actions"><LanguageToggle /><a className="availability" href="https://wa.me/5511997396671" target="_blank" rel="noreferrer"><span /> Disponível para projetos</a></div>
@@ -97,7 +98,8 @@ export default function Home() {
 
       <section className="hero" id="inicio">
         <div className="hero-meta"><span>Game Developer</span><span>Full Stack Web Developer</span><span>Osasco · SP</span></div>
-        <h1>Desenvolvedor de jogos<br />e web <span>full stack.</span></h1>
+        <div className="hero-brand-mark" aria-hidden="true"><img src={asset("/brand/symbol-pink.svg")} alt="" /></div>
+        <h1>Desenvolvedor de jogos<br />e web <span>full stack</span></h1>
         <div className="hero-bottom">
           <p>Crio jogos, sites, aplicações web e experiências digitais completas, unindo programação, identidade visual e atenção à experiência de uso.</p>
           <a className="circle-link" href="#smaug" aria-label="Conhecer meus projetos">↓</a>
@@ -107,9 +109,9 @@ export default function Home() {
       <section className="intro" id="sobre" data-reveal>
         <p className="label">01 / Sobre mim</p>
         <div className="intro-content">
-          <figure className="about-portrait" data-reveal="left"><img src={asset("/danilo-petraglia.webp")} alt="Retrato profissional de Danilo Petraglia" /></figure>
+          <figure className="about-portrait" data-reveal="left"><img src={asset("/brand/danilo-petraglia-brand.png")} alt="Retrato profissional de Danilo Petraglia" /></figure>
           <div className="about-main" data-reveal="right">
-          <h2>Curiosidade que virou<br />ofício.</h2>
+          <h2>Curiosidade que virou<br />ofício</h2>
           <div className="intro-copy" data-reveal="right">
             <p>Sempre tive interesse por tecnologia e curiosidade para entender como as coisas funcionam. Grande parte do que aprendi começou de forma autodidata, por meio de vídeos, pesquisas e, principalmente, da prática. Ao longo dos anos, explorei diferentes áreas de hardware e software, testando ferramentas, resolvendo problemas e transformando a curiosidade em conhecimento técnico.</p>
             <p>Minha relação com os jogos também começou cedo. Além de jogar, sempre tive interesse em observar como cada experiência era construída: suas mecânicas, ambientação, narrativa, sons e formas de interação. Essa paixão me levou ao desenvolvimento de jogos, área em que atuo há aproximadamente três anos, trabalhando principalmente com programação, sistemas e mecânicas de gameplay.</p>
@@ -188,7 +190,7 @@ export default function Home() {
       <section className="web-section" id="web" data-reveal>
         <p className="label">05 / Desenvolvimento web</p>
         <div className="web-content" data-reveal>
-          <h2>Da ideia ao site<br />pronto para crescer.</h2>
+          <h2>Da ideia ao site<br />pronto para crescer</h2>
           <div><p>Desenvolvimento full stack de sites e aplicações para a web, da construção das interfaces à integração de recursos e publicação. Cada projeto é pensado para funcionar bem em computadores e celulares, comunicar com clareza e facilitar a evolução do negócio.</p><div className="web-stack"><span>Sites institucionais</span><span>Landing pages</span><span>E-commerce</span><span>Aplicações web</span><span>Integração de APIs</span><span>Front-end e back-end</span></div></div>
         </div>
         <div className="web-services" aria-label="Experiência em desenvolvimento web" data-reveal>
@@ -211,7 +213,7 @@ export default function Home() {
 
       <section className="contact" id="contato" data-reveal>
         <p className="label">06 / Contato</p>
-        <h2>Vamos construir<br />algo juntos.</h2>
+        <h2>Vamos construir<br />algo juntos</h2>
         <div className="contact-actions">
           <a className="email" href="mailto:contatodanilohp@gmail.com">contatodanilohp@gmail.com <Arrow /></a>
           <a className="whatsapp" href="https://wa.me/5511997396671" target="_blank" rel="noreferrer"><span>WhatsApp</span><strong>(11) 99739-6671</strong><Arrow /></a>
@@ -223,7 +225,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer><span>Danilo Petraglia</span><span>Game Developer & Full Stack Web Developer</span><a href="#inicio">Voltar ao topo ↑</a></footer>
+      <footer><img className="footer-signature" src={asset("/brand/signature-white.svg")} alt="Danilo Petraglia" /><span>Game Developer & Full Stack Web Developer</span><a href="#inicio">Voltar ao topo ↑</a></footer>
     </main>
   );
 }

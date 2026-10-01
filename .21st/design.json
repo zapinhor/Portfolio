@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "project": {
+    "name": "danilo-petraglia-portfolio",
+    "productType": null,
+    "stack": [
+      "nextjs",
+      "react",
+      "tailwind-v4",
+      "vite"
+    ]
+  },
+  "sources": {
+    "tokens": [
+      "app/globals.css"
+    ],
+    "components": [],
+    "assets": [],
+    "instructions": []
+  },
+  "design": {
+    "colorMode": "dark",
+    "colors": {
+      "--muted": {
+        "value": "#8a8a86",
+        "source": "app/globals.css"
+      }
+    },
+    "typography": {
+      "--text": {
+        "value": "#f2f2ef",
+        "source": "app/globals.css"
+      }
+    },
+    "spacing": {},
+    "radius": {},
+    "shadows": {},
+    "motion": {},
+    "density": "unknown"
+  },
+  "components": {
+    "installed": [],
+    "preferredPrimitives": [],
+    "patterns": []
+  },
+  "constraints": {
+    "must": [],
+    "avoid": []
+  },
+    "decisions": [
+      {
+        "decision": "Use the supplied Danilo Petraglia identity as the portfolio's visual authority: Carbon Black #1B2126, Cotton Pink #E5BCC3, white, official SVG logos, geometric graphics, grid textures, and the supplied monochrome portrait.",
+        "source": "DANILO_PETRAGLIA_ID_VISUAL.zip",
+        "date": "2026-09-30"
+      },
+      {
+        "decision": "NabuLab is the primary current project and receives a dedicated high-emphasis case-study block within the web section.",
+        "source": "User request",
+        "date": "2026-09-30"
+      },
+      {
+        "decision": "Keep every portfolio section dark, reserve Cotton Pink for selective emphasis, always present the D and P as the complete official monogram, and style NabuLab with the portfolio palette rather than its product-blue palette.",
+        "source": "User request",
+        "date": "2026-10-01"
+      },
+      {
+        "decision": "Use the supplied portrait only in the About section; keep the complete DP monogram in the hero and other brand placements.",
+        "source": "User request",
+        "date": "2026-10-01"
+      }
+    ],
+  "evidence": [
+    {
+      "fact": "design.colorMode:light",
+      "source": "app/globals.css"
+    },
+    {
+      "fact": "design.tokens",
+      "source": "app/globals.css"
+    },
+    {
+      "fact": "project.stack:nextjs",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:react",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:tailwind-v4",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:vite",
+      "source": "package.json"
+    }
+  ],
+  "generatedAt": "2026-10-01T00:38:21.043Z"
+}
