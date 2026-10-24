@@ -199,23 +199,11 @@ export default function Home() {
           <span><small>03</small><strong>Aplicações e integrações</strong><p>Recursos interativos, consumo de APIs e conexão entre interface, dados e regras do projeto.</p></span>
         </div>
         <FisioPrototype />
-        <article className="client-project" id="lash-laripn" data-reveal>
-          <a className="client-project-visual" href="https://lash-laripn.github.io/Lash-Laripn/" target="_blank" rel="noreferrer" aria-label="Acessar o site Lash Laripn">
-            <img src={asset("/lash-laripn.webp")} alt="Página inicial do site Lash Laripn" loading="lazy" decoding="async" />
-          </a>
-          <div className="client-project-copy">
-            <div className="client-project-meta"><span>Projeto para cliente</span><span>Entregue em outubro de 2026</span></div>
-            <h3>Lash Laripn</h3>
-            <p>Site institucional para uma profissional de extensão de cílios e design de sobrancelhas em Osasco. A experiência apresenta serviços, resultados reais, depoimentos, formação profissional e informações de atendimento com uma direção visual elegante e responsiva.</p>
-            <div className="client-project-facts">
-              <span><small>Objetivo</small><strong>Apresentar o trabalho e gerar agendamentos</strong></span>
-              <span><small>Recursos</small><strong>Galeria, carrossel, formulário e WhatsApp</strong></span>
-            </div>
-            <div className="client-project-role"><small>Minha atuação</small><p>Projeto desenvolvido e entregue por mim: estrutura, interface, implementação responsiva, interações, integração com WhatsApp, otimização das imagens e publicação.</p></div>
-            <div className="prototype-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
-            <a className="client-project-link" href="https://lash-laripn.github.io/Lash-Laripn/" target="_blank" rel="noreferrer">Visitar o site <Arrow /></a>
-          </div>
-        </article>
+        <a className="web-project featured-web" id="lash-laripn" href="https://lash-laripn.github.io/Lash-Laripn/" target="_blank" rel="noreferrer" aria-label="Acessar o site Lash Laripn" data-reveal>
+          <div><span>Projeto para cliente · HTML, CSS e JavaScript</span><h3>Lash Laripn</h3></div>
+          <div className="web-project-copy"><p>Site institucional para uma profissional de extensão de cílios e design de sobrancelhas em Osasco, com galeria, depoimentos, formulário e integração com WhatsApp.</p><p className="role-summary"><small>Minha atuação</small> Estrutura, interface, implementação responsiva, interações, otimização das imagens e publicação.</p></div>
+          <strong>Visitar o site <Arrow /></strong>
+        </a>
         <a className="web-project featured-web" href="https://drive.google.com/file/d/1pybqrFdF97QAyaLOGlf2yHx1GyXW3GKI/view?usp=sharing" target="_blank" rel="noreferrer" aria-label="Baixar o Pokémon Tamagotchi para Windows" data-reveal>
           <div><span>Aplicação de console · C# · cerca de 5 meses</span><h3>Pokémon Tamagotchi</h3></div>
           <div className="web-project-copy"><p>Versão original desenvolvida em C# e .NET. Permite adotar um mascote, acompanhar seus atributos e interagir com ações como alimentar, brincar e dormir. O projeto serviu como base conceitual e técnica para o Pokégotchi na web.</p><p className="role-summary"><small>Minha atuação</small> Projeto individual: programação, lógica, estrutura da aplicação e desenvolvimento completo em C#.</p></div>

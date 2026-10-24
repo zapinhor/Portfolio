@@ -49,5 +49,5 @@ Generated from project sources at 2026-10-01T00:38:21.043Z.
 - NabuLab is the primary current project and receives a dedicated high-emphasis case-study block inside the web section.
 - Every section stays dark; Cotton Pink is reserved for selective emphasis. The official D and P monogram must always appear together, and the NabuLab case uses the portfolio palette instead of product blue.
 - The supplied portrait appears only in the About section; the hero and other brand placements use the complete DP monogram.
-- Completed client websites use image-led case studies inside Web, after NabuLab and before older academic or downloadable work.
+- Completed client websites use the same compact project-row treatment as the other secondary Web projects, after NabuLab.
 
