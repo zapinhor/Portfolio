@@ -373,6 +373,28 @@ footer{height:110px;background:#07080a;border-color:#30363a}
 .nabulab-features span{border-color:var(--brand-line);color:#ecece8}
 .nabulab-role p{color:var(--brand-muted)}
 .nabulab-product .prototype-stack span{border-color:#3a4146;color:#d5d5d1}
+.client-project{margin:48px 0 96px;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(340px,.82fr);border-top:1px solid var(--brand-line);border-bottom:1px solid var(--brand-line);background:#11171b}
+.client-project-visual{position:relative;min-height:620px;overflow:hidden;background:#171d21}
+.client-project-visual::after{content:"Abrir projeto ↗";position:absolute;right:18px;bottom:18px;padding:12px 14px;background:var(--accent);color:var(--carbon);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;transition:transform .25s ease}
+.client-project-visual:hover::after{transform:translateY(-3px)}
+.client-project-visual img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .7s cubic-bezier(.2,.75,.25,1)}
+.client-project-visual:hover img{transform:scale(1.018)}
+.client-project-copy{padding:clamp(42px,5vw,72px);display:flex;flex-direction:column;align-items:flex-start}
+.client-project-meta{width:100%;display:flex;justify-content:space-between;gap:24px;color:var(--accent);font-size:9px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+.client-project-copy h3{margin:62px 0 24px;font-size:clamp(48px,6vw,82px);font-weight:500;line-height:.92;letter-spacing:-.035em}
+.client-project-copy>p{max-width:600px;margin:0;color:var(--brand-muted);font-size:14px;line-height:1.8}
+.client-project-facts{width:100%;display:grid;grid-template-columns:1fr 1fr;margin-top:38px;border-top:1px solid var(--brand-line);border-bottom:1px solid var(--brand-line)}
+.client-project-facts span{padding:22px 18px 22px 0}
+.client-project-facts span+span{padding-left:18px;border-left:1px solid var(--brand-line)}
+.client-project-facts small,.client-project-role small{display:block;margin-bottom:8px;color:var(--accent);font-size:9px;letter-spacing:.11em;text-transform:uppercase}
+.client-project-facts strong{display:block;color:#ecece8;font-size:12px;font-weight:500;line-height:1.55}
+.client-project-role{margin-top:30px}
+.client-project-role p{max-width:590px;margin:0;color:var(--brand-muted);font-size:12px;line-height:1.75}
+.client-project .prototype-stack{margin-top:28px}
+.client-project .prototype-stack span{border-color:#3a4146;color:#d5d5d1}
+.client-project-link{margin-top:auto;padding-top:44px;display:flex;align-items:center;gap:12px;color:var(--accent);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em}
+.client-project-link svg{transition:transform .25s ease}
+.client-project-link:hover svg{transform:translate(3px,-3px)}
 
-@media(max-width:900px){.hero-brand-mark{right:-4vw;width:clamp(250px,52vw,430px);opacity:.16}.nabulab-identity{border-right:0;border-bottom:1px solid var(--brand-line)}}
-@media(max-width:650px){.hero-brand-mark{top:36%;right:-15vw;width:270px;opacity:.14}.about-symbol{min-height:430px}.about-symbol img{width:68%}.nabulab-metrics strong+strong{border-color:var(--brand-line)}}
+@media(max-width:900px){.hero-brand-mark{right:-4vw;width:clamp(250px,52vw,430px);opacity:.16}.nabulab-identity{border-right:0;border-bottom:1px solid var(--brand-line)}.client-project{grid-template-columns:1fr}.client-project-visual{min-height:540px}.client-project-link{margin-top:0}}
+@media(max-width:650px){.hero-brand-mark{top:36%;right:-15vw;width:270px;opacity:.14}.about-symbol{min-height:430px}.about-symbol img{width:68%}.nabulab-metrics strong+strong{border-color:var(--brand-line)}.client-project{margin:32px -20px 72px}.client-project-visual{min-height:310px}.client-project-copy{padding:36px 20px 42px}.client-project-meta{flex-direction:column;gap:8px}.client-project-copy h3{margin-top:42px;font-size:48px}.client-project-facts{grid-template-columns:1fr}.client-project-facts span+span{padding-left:0;border-left:0;border-top:1px solid var(--brand-line)}.client-project-visual::after{right:12px;bottom:12px}}
