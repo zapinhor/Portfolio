@@ -3,12 +3,12 @@
 import { useEffect, useState } from "react";
 
 const links = [
+  ["Web", "#web"],
+  ["NabuLab", "#nabulab"],
+  ["Pokégotchi", "#pokegotchi"],
   ["Sobre mim", "#sobre"],
   ["Habilidades", "#habilidades"],
   ["Jogos", "#smaug"],
-  ["Pokégotchi", "#pokegotchi"],
-  ["Web", "#web"],
-  ["NabuLab", "#nabulab"],
   ["Contato", "#contato"],
 ];
 

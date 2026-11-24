@@ -84,12 +84,12 @@ export default function Home() {
       <header className="header">
         <a className="name brand-name" href="#inicio" aria-label="Danilo Petraglia — início"><img src={asset("/brand/logo-horizontal-dark.svg")} alt="Danilo Petraglia" /></a>
         <nav aria-label="Navegação principal">
+          <a href="#web">Web</a>
+          <a href="#nabulab">NabuLab</a>
+          <a href="#pokegotchi">Pokégotchi</a>
           <a href="#sobre">Sobre mim</a>
           <a href="#habilidades">Habilidades</a>
           <a href="#smaug">Jogos</a>
-          <a href="#pokegotchi">Pokégotchi</a>
-          <a href="#web">Web</a>
-          <a href="#nabulab">NabuLab</a>
           <a href="#contato">Contato</a>
         </nav>
         <div className="header-actions"><LanguageToggle /><a className="availability" href="https://wa.me/5511997396671" target="_blank" rel="noreferrer"><span /> Disponível para projetos</a></div>
@@ -97,17 +97,81 @@ export default function Home() {
       </header>
 
       <section className="hero" id="inicio">
-        <div className="hero-meta"><span>Game Developer</span><span>Full Stack Web Developer</span><span>Osasco · SP</span></div>
+        <div className="hero-meta"><span>Full Stack Web Developer</span><span>Game Developer</span><span>Osasco · SP</span></div>
         <div className="hero-brand-mark" aria-hidden="true"><img src={asset("/brand/symbol-pink.svg")} alt="" /></div>
-        <h1>Desenvolvedor de jogos<br />e web <span>full stack</span></h1>
+        <h1>Desenvolvedor web<br /><span>full stack</span> e de jogos</h1>
         <div className="hero-bottom">
-          <p>Crio jogos, sites, aplicações web e experiências digitais completas, unindo programação, identidade visual e atenção à experiência de uso.</p>
-          <a className="circle-link" href="#smaug" aria-label="Conhecer meus projetos">↓</a>
+          <p>Desenvolvo aplicações web, sites e jogos, da interface ao banco de dados e à publicação.</p>
+          <a className="circle-link" href="#web" aria-label="Conhecer meus projetos">↓</a>
+        </div>
+      </section>
+
+      <section className="web-section" id="web" data-reveal>
+        <p className="label">01 / Desenvolvimento web</p>
+        <div className="web-content" data-reveal>
+          <h2>Da ideia ao site<br />pronto para crescer</h2>
+          <div><p>Desenvolvimento full stack de sites e aplicações para a web, da construção das interfaces à integração de recursos e publicação. Cada projeto é pensado para funcionar bem em computadores e celulares, comunicar com clareza e facilitar a evolução do negócio.</p><div className="web-stack"><span>Sites institucionais</span><span>Landing pages</span><span>E-commerce</span><span>Aplicações web</span><span>Integração de APIs</span><span>Front-end e back-end</span></div></div>
+        </div>
+        <FisioPrototype />
+        <div className="web-services" aria-label="Experiência em desenvolvimento web" data-reveal>
+          <span><small>01</small><strong>Sites responsivos</strong><p>Interfaces adaptadas a diferentes telas, com estrutura clara, desempenho e navegação objetiva.</p></span>
+          <span><small>02</small><strong>E-commerce</strong><p>Estruturação de lojas virtuais, páginas de produtos e jornadas de compra voltadas à conversão.</p></span>
+          <span><small>03</small><strong>Aplicações e integrações</strong><p>Recursos interativos, consumo de APIs e conexão entre interface, dados e regras do projeto.</p></span>
+        </div>
+        <a className="web-project featured-web" id="metrapack" href="https://metrapack.vercel.app/" target="_blank" rel="noreferrer" aria-label="Acessar o site Metrapack" data-reveal>
+          <div><span>Projeto para cliente · JavaScript e Three.js</span><h3>Metrapack</h3></div>
+          <div className="web-project-copy"><p>Site de uma indústria de filmes plásticos e embalagens, com cena 3D e um montador de especificação que envia o pedido de orçamento pelo WhatsApp.</p><p className="role-summary"><small>Minha atuação</small> Participei do desenvolvimento pela Concept Digital.</p></div>
+          <strong>Visitar o site <Arrow /></strong>
+        </a>
+        <a className="web-project featured-web" id="dado-grifes" href="https://dado-grifes-sigma.vercel.app/" target="_blank" rel="noreferrer" aria-label="Acessar o site Dado Grifes" data-reveal>
+          <div><span>Projeto para cliente · Three.js</span><h3>Dado Grifes</h3></div>
+          <div className="web-project-copy"><p>Vitrine de perfumaria e moda de luxo, com catálogo filtrável, sacola e elementos 3D interativos.</p><p className="role-summary"><small>Minha atuação</small> Participei do desenvolvimento pela Concept Digital.</p></div>
+          <strong>Visitar o site <Arrow /></strong>
+        </a>
+        <a className="web-project featured-web" id="lash-laripn" href="https://lash-laripn.github.io/Lash-Laripn/" target="_blank" rel="noreferrer" aria-label="Acessar o site Lash Laripn" data-reveal>
+          <div><span>Projeto para cliente · HTML, CSS e JavaScript</span><h3>Lash Laripn</h3></div>
+          <div className="web-project-copy"><p>Site institucional para uma profissional de extensão de cílios e design de sobrancelhas em Osasco, com galeria, depoimentos, formulário e integração com WhatsApp.</p><p className="role-summary"><small>Minha atuação</small> Estrutura, interface, implementação responsiva, interações, otimização das imagens e publicação.</p></div>
+          <strong>Visitar o site <Arrow /></strong>
+        </a>
+        <a className="web-project featured-web" href="https://drive.google.com/file/d/1pybqrFdF97QAyaLOGlf2yHx1GyXW3GKI/view?usp=sharing" target="_blank" rel="noreferrer" aria-label="Baixar o Pokémon Tamagotchi para Windows" data-reveal>
+          <div><span>Aplicação de console · C# · cerca de 5 meses</span><h3>Pokémon Tamagotchi</h3></div>
+          <div className="web-project-copy"><p>Versão original desenvolvida em C# e .NET. Permite adotar um mascote, acompanhar seus atributos e interagir com ações como alimentar, brincar e dormir. O projeto serviu como base conceitual e técnica para o Pokégotchi na web.</p><p className="role-summary"><small>Minha atuação</small> Projeto individual: programação, lógica, estrutura da aplicação e desenvolvimento completo em C#.</p></div>
+          <strong>Download para Windows <Arrow /></strong>
+        </a>
+        <a className="web-project secondary-web" href="https://www.canva.com/design/DAFT1FEBIFU/opW7u-kxTWT3RjzeynqKUA/view" target="_blank" rel="noreferrer" aria-label="Abrir apresentação do projeto acadêmico de e-commerce no Canva" data-reveal>
+          <div><span>Projeto acadêmico</span><h3>E-commerce de moda</h3></div>
+          <div className="web-project-copy"><p>Projeto de site para uma loja virtual de roupas. Embora não esteja mais publicado, a apresentação registra a proposta visual e a experiência desenvolvida.</p><p className="role-summary"><small>Minha atuação</small> Projeto acadêmico desenvolvido em equipe.</p></div>
+          <strong>Ver apresentação <Arrow /></strong>
+        </a>
+      </section>
+
+      <section className="featured-project" id="pokegotchi" data-reveal>
+        <div className="featured-heading">
+          <p className="label">02 / Projeto autoral</p>
+          <div>
+            <span className="featured-kicker">Aplicação web · JavaScript</span>
+            <h2>Pokégotchi</h2>
+          </div>
+        </div>
+        <div className="featured-grid">
+          <figure className="featured-visual" data-reveal="left">
+            <img src={asset("/pokegotchi.png")} alt="Tela inicial do Pokégotchi com Pikachu e opções para iniciar ou continuar uma jornada" loading="lazy" decoding="async" />
+            <figcaption>Interface atual da aplicação web</figcaption>
+          </figure>
+          <div className="featured-copy" data-reveal="right">
+            <p>Pokégotchi é uma aplicação web inspirada em mascotes virtuais, criada a partir do conceito desenvolvido inicialmente no Pokémon Tamagotchi em C#. O projeto transforma a experiência de terminal em uma interface acessível pelo navegador.</p>
+            <p>Iniciado em agosto de 2026 e em desenvolvimento constante, reúne lógica de estado, interações com o mascote, consumo de APIs e recursos de geolocalização. Novas mecânicas e melhorias são incorporadas continuamente.</p>
+            <div className="featured-tags" aria-label="Tecnologias e recursos"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>APIs</span><span>Geolocalização</span></div>
+            <div className="featured-facts"><span><small>Início</small><strong>Agosto de 2026</strong></span><span><small>Status</small><strong>Em desenvolvimento constante</strong></span></div>
+            <div className="featured-role"><small>Minha atuação</small><p>Projeto individual desenvolvido integralmente por mim, da programação full stack e integrações à construção da interface, identidade visual e publicação.</p></div>
+            <a className="download-button" href="https://pokegotchi.com.br" target="_blank" rel="noreferrer">Acessar Pokégotchi <span>Aplicação web</span></a>
+            <small>Projeto disponível em pokegotchi.com.br.</small>
+          </div>
         </div>
       </section>
 
       <section className="intro" id="sobre" data-reveal>
-        <p className="label">01 / Sobre mim</p>
+        <p className="label">03 / Sobre mim</p>
         <div className="intro-content">
           <figure className="about-portrait" data-reveal="left"><img src={asset("/brand/danilo-petraglia-brand.png")} alt="Retrato profissional de Danilo Petraglia" /></figure>
           <div className="about-main" data-reveal="right">
@@ -115,13 +179,18 @@ export default function Home() {
           <div className="intro-copy" data-reveal="right">
             <p>Sempre tive interesse por tecnologia e curiosidade para entender como as coisas funcionam. Grande parte do que aprendi começou de forma autodidata, por meio de vídeos, pesquisas e, principalmente, da prática. Ao longo dos anos, explorei diferentes áreas de hardware e software, testando ferramentas, resolvendo problemas e transformando a curiosidade em conhecimento técnico.</p>
             <p>Minha relação com os jogos também começou cedo. Além de jogar, sempre tive interesse em observar como cada experiência era construída: suas mecânicas, ambientação, narrativa, sons e formas de interação. Essa paixão me levou ao desenvolvimento de jogos, área em que atuo há aproximadamente três anos, trabalhando principalmente com programação, sistemas e mecânicas de gameplay.</p>
-            <p>Paralelamente, atuo há cerca de quatro anos com desenvolvimento web. Trabalho na criação de sites institucionais, landing pages, e-commerce e aplicações responsivas, utilizando HTML, CSS e JavaScript, além de WordPress, integrações com APIs e recursos de back-end conforme as necessidades de cada projeto.</p>
-            <p>Hoje, busco evoluir como desenvolvedor de jogos e desenvolvedor web full stack, contribuindo tanto na construção técnica quanto na definição de soluções claras e funcionais. Meu objetivo é transformar ideias em produtos digitais bem estruturados, com identidade e uma experiência consistente para quem utiliza.</p>
+            <p>Em desenvolvimento web, meu principal projeto é o NabuLab, plataforma de simulados em produção com Next.js, TypeScript, Supabase e PostgreSQL. Também desenvolvi o site da Lash Laripn e, desde novembro de 2026, sou sócio da Concept Digital, onde trabalho em sites e sistemas para clientes.</p>
+            <p>Hoje, busco uma posição de desenvolvedor full stack ou front-end júnior. Uso IA no desenvolvimento e continuo estudando jogos, área em que me formei na FATEC em 2026.</p>
           </div>
           </div>
         </div>
         <aside className="experience-note" data-reveal>
           <span>Experiência profissional</span>
+          <div><strong>Concept Digital</strong><small>nov/2026 — atual</small></div>
+          <p>Sócio e desenvolvedor full stack. Desenvolvi o módulo financeiro do CRM da empresa em Next.js, TypeScript e Supabase e participei dos sites da Metrapack e da Dado Grifes.</p>
+        </aside>
+        <aside className="experience-note" data-reveal>
+          <span>Experiência anterior</span>
           <div><strong>Teleperformance</strong><small>nov/2024 — ago/2025</small></div>
           <p>Atuação bilíngue em uma operação de grande volume, com média de aproximadamente 700 tickets por dia e desempenho superior a 90% nos indicadores acompanhados. A experiência fortaleceu minha disciplina, atenção a detalhes e comunicação em português e inglês.</p>
         </aside>
@@ -131,7 +200,7 @@ export default function Home() {
 
       <section className="smaug" id="smaug">
         <div className="section-title" data-reveal>
-          <p className="label">03 / Projetos acadêmicos</p>
+          <p className="label">05 / Projetos acadêmicos</p>
           <h2>SMAUG</h2>
           <p className="smaug-description">Sistema acadêmico da FATEC que propõe, a cada semestre, o desenvolvimento colaborativo de um protótipo jogável.</p>
         </div>
@@ -162,60 +231,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="featured-project" id="pokegotchi" data-reveal>
-        <div className="featured-heading">
-          <p className="label">04 / Projeto em destaque</p>
-          <div>
-            <span className="featured-kicker">Aplicação web · JavaScript</span>
-            <h2>Pokégotchi</h2>
-          </div>
-        </div>
-        <div className="featured-grid">
-          <figure className="featured-visual" data-reveal="left">
-            <img src={asset("/pokegotchi.png")} alt="Tela inicial do Pokégotchi com Pikachu e opções para iniciar ou continuar uma jornada" loading="lazy" decoding="async" />
-            <figcaption>Interface atual da aplicação web</figcaption>
-          </figure>
-          <div className="featured-copy" data-reveal="right">
-            <p>Pokégotchi é uma aplicação web inspirada em mascotes virtuais, criada a partir do conceito desenvolvido inicialmente no Pokémon Tamagotchi em C#. O projeto transforma a experiência de terminal em uma interface acessível pelo navegador.</p>
-            <p>Iniciado em agosto de 2026 e em desenvolvimento constante, reúne lógica de estado, interações com o mascote, consumo de APIs e recursos de geolocalização. Novas mecânicas e melhorias são incorporadas continuamente.</p>
-            <div className="featured-tags" aria-label="Tecnologias e recursos"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>APIs</span><span>Geolocalização</span></div>
-            <div className="featured-facts"><span><small>Início</small><strong>Agosto de 2026</strong></span><span><small>Status</small><strong>Em desenvolvimento constante</strong></span></div>
-            <div className="featured-role"><small>Minha atuação</small><p>Projeto individual desenvolvido integralmente por mim, da programação full stack e integrações à construção da interface, identidade visual e publicação.</p></div>
-            <a className="download-button" href="https://pokegotchi.com.br" target="_blank" rel="noreferrer">Acessar Pokégotchi <span>Aplicação web</span></a>
-            <small>Projeto disponível em pokegotchi.com.br.</small>
-          </div>
-        </div>
-      </section>
-
-      <section className="web-section" id="web" data-reveal>
-        <p className="label">05 / Desenvolvimento web</p>
-        <div className="web-content" data-reveal>
-          <h2>Da ideia ao site<br />pronto para crescer</h2>
-          <div><p>Desenvolvimento full stack de sites e aplicações para a web, da construção das interfaces à integração de recursos e publicação. Cada projeto é pensado para funcionar bem em computadores e celulares, comunicar com clareza e facilitar a evolução do negócio.</p><div className="web-stack"><span>Sites institucionais</span><span>Landing pages</span><span>E-commerce</span><span>Aplicações web</span><span>Integração de APIs</span><span>Front-end e back-end</span></div></div>
-        </div>
-        <div className="web-services" aria-label="Experiência em desenvolvimento web" data-reveal>
-          <span><small>01</small><strong>Sites responsivos</strong><p>Interfaces adaptadas a diferentes telas, com estrutura clara, desempenho e navegação objetiva.</p></span>
-          <span><small>02</small><strong>E-commerce</strong><p>Estruturação de lojas virtuais, páginas de produtos e jornadas de compra voltadas à conversão.</p></span>
-          <span><small>03</small><strong>Aplicações e integrações</strong><p>Recursos interativos, consumo de APIs e conexão entre interface, dados e regras do projeto.</p></span>
-        </div>
-        <FisioPrototype />
-        <a className="web-project featured-web" id="lash-laripn" href="https://lash-laripn.github.io/Lash-Laripn/" target="_blank" rel="noreferrer" aria-label="Acessar o site Lash Laripn" data-reveal>
-          <div><span>Projeto para cliente · HTML, CSS e JavaScript</span><h3>Lash Laripn</h3></div>
-          <div className="web-project-copy"><p>Site institucional para uma profissional de extensão de cílios e design de sobrancelhas em Osasco, com galeria, depoimentos, formulário e integração com WhatsApp.</p><p className="role-summary"><small>Minha atuação</small> Estrutura, interface, implementação responsiva, interações, otimização das imagens e publicação.</p></div>
-          <strong>Visitar o site <Arrow /></strong>
-        </a>
-        <a className="web-project featured-web" href="https://drive.google.com/file/d/1pybqrFdF97QAyaLOGlf2yHx1GyXW3GKI/view?usp=sharing" target="_blank" rel="noreferrer" aria-label="Baixar o Pokémon Tamagotchi para Windows" data-reveal>
-          <div><span>Aplicação de console · C# · cerca de 5 meses</span><h3>Pokémon Tamagotchi</h3></div>
-          <div className="web-project-copy"><p>Versão original desenvolvida em C# e .NET. Permite adotar um mascote, acompanhar seus atributos e interagir com ações como alimentar, brincar e dormir. O projeto serviu como base conceitual e técnica para o Pokégotchi na web.</p><p className="role-summary"><small>Minha atuação</small> Projeto individual: programação, lógica, estrutura da aplicação e desenvolvimento completo em C#.</p></div>
-          <strong>Download para Windows <Arrow /></strong>
-        </a>
-        <a className="web-project secondary-web" href="https://www.canva.com/design/DAFT1FEBIFU/opW7u-kxTWT3RjzeynqKUA/edit" target="_blank" rel="noreferrer" aria-label="Abrir apresentação do projeto acadêmico de e-commerce no Canva" data-reveal>
-          <div><span>Projeto acadêmico</span><h3>E-commerce de moda</h3></div>
-          <div className="web-project-copy"><p>Projeto de site para uma loja virtual de roupas. Embora não esteja mais publicado, a apresentação registra a proposta visual e a experiência desenvolvida.</p><p className="role-summary"><small>Minha atuação</small> Projeto acadêmico desenvolvido em equipe.</p></div>
-          <strong>Ver apresentação <Arrow /></strong>
-        </a>
-      </section>
-
       <section className="contact" id="contato" data-reveal>
         <p className="label">06 / Contato</p>
         <h2>Vamos construir<br />algo juntos</h2>
@@ -230,7 +245,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer><img className="footer-signature" src={asset("/brand/signature-white.svg")} alt="Danilo Petraglia" /><span>Game Developer & Full Stack Web Developer</span><a href="#inicio">Voltar ao topo ↑</a></footer>
+      <footer><img className="footer-signature" src={asset("/brand/signature-white.svg")} alt="Danilo Petraglia" /><span>Full Stack Web Developer & Game Developer</span><a href="#inicio">Voltar ao topo ↑</a></footer>
     </main>
   );
 }
